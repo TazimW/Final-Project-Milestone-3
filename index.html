@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Final-Project-Milestone-3</title>
+    <!-- FONT AWESOME  -->
+    <script
+      src="https://kit.fontawesome.com/d15b4c5281.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS BOOTSTRAP  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -11,8 +16,10 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Section 1 start -->
     <section class="section_1">
       <nav class="navbar navbar-expand-md navbar-expand-lg">
         <div class="container mt-4">
@@ -55,6 +62,9 @@
         </div>
       </nav>
     </section>
+    <!-- Section 1 end  -->
+
+    <!-- Section 2 start -->
     <section class="section_2">
       <div
         id="carouselExampleControls"
@@ -128,6 +138,9 @@
         </div>
       </div>
     </section>
+    <!-- Section 2 end -->
+
+    <!-- Section 3 start -->
     <section class="section_3 pt-5">
       <div class="text-center mb-5">
         <h1 class="fs-1 fw-bolder">
@@ -249,6 +262,9 @@
         </div>
       </div>
     </section>
+    <!-- Section 3 end -->
+
+    <!-- Section 4 start -->
     <section class="section_4 container pt-5">
       <div class="text-center pb-4">
         <h1 class="fs-1 fw-bolder">Frequently Asked Questions</h1>
@@ -284,8 +300,10 @@
                 1. Flexbox is designed for one-dimensional layouts, and Grid for
                 two-dimensional layouts.
                 <br />
+                <br />
                 2. The approach of CSS Grid is the layout first, while the
                 Flexbox approach is primarily the content.
+                <br />
                 <br />
                 3. The Flexbox layout is best suited to application components
                 and small-scale layouts, while the Grid layout is designed for
@@ -304,7 +322,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Accordion Item #2
+              What's the difference between Bootstrap and Tailwind?
             </button>
           </h2>
           <div
@@ -314,14 +332,24 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>
+                1. Tailwind offers predesigned widgets to build a site from
+                scratch with fast UI development. Bootstrap comes with a set of
+                pre-styled responsive, mobile-first components that possess a
+                definite UI kit.
+                <br />
+                <br />
+                2. Tailwind CSS uses a set of utility classes to create a neat
+                UI with more flexibility and uniqueness. Sites created using
+                Bootstrap follow the generic pattern that makes them look
+                identical.
+                <br />
+                <br />
+                3. Websites created using Tailwind CSS are much more
+                customizable. Websites created with Bootstraps are known for
+                their responsiveness and flawless design, but the looks are
+                generic and similar.
+              </strong>
             </div>
           </div>
         </div>
@@ -335,7 +363,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Accordion Item #3
+              What is CSS Box Model
             </button>
           </h2>
           <div
@@ -345,20 +373,128 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>
+                The CSS box model is essentially a box that wraps around every
+                HTML element. It consists of: margins, borders, padding, and the
+                actual content.
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              What is a Semantic Tag
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>
+                Semantic HTML or semantic markup is HTML that introduces meaning
+                to the web page rather than just presentation. For example, a
+                "P" tag indicates that the enclosed text is a paragraph. This is
+                both semantic and presentational because people know what
+                paragraphs are, and browsers know how to display them.
+              </strong>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section_5"></section>
+    <!-- Section 4 end -->
+
+    <!-- Section 5 start -->
+    <section class="section_5 pt-5">
+      <div class="container text-center text-white bg-info border rounded">
+        <div class="row p-5 align-items-center">
+          <div class="col-lg-10 text-lg-start ">
+            <h1>Ready to join?</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the
+              <br />
+              readable content of a page when looking at its layout.
+            </p>
+          </div>
+          <div class="col-lg-2">
+            <button class="btn btn-light text-info" type="submit">
+              Register Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5 end -->
+
+    <!-- Section 6 start -->
+    <section class="section_6 container pt-5 pb-5 text-center d-none d-lg-block">
+      <h1 class="fs-1 fw-bolder p-5">
+        Trusted by over 800+ companies
+      </h1>
+      <div class="grid text-center d-flex justify-content-between">
+        <div>
+          <img src="images/company/company-1.png" alt="">
+        </div>
+        <div>
+          <img src="images/company/company-2.png" alt="">
+        </div>
+        <div>
+          <img src="images/company/company-3.png" alt="">
+        </div>
+        <div>
+          <img src="images/company/company-4.png" alt="">
+        </div>
+        <div>
+          <img src="images/company/company-5.png" alt="">
+        </div>
+        <div>
+          <img src="images/company/company-6.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Section 6 end -->
+
+    <!-- Section 7 start -->
+    <section class="section_7 pt-5">
+      <footer class="container-fluid bg-black text-white p-5">
+        <div class="text-center">
+          <h1 class="fs-1 fw-bolder pt-5 pb-5">Pro Edu</h1>
+          <span>
+            <p>Office 41, Zawaya Buildin, Ghala Muscat,</p>
+            <p>Sultanate of Oman</p>
+            <p>Privacy Ploicy | Terms of use</p>
+          </span>
+          <div class="footer_icons pt-3">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/abdullahal.tazimii.7/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a target="_blank" href="https://twitter.com/Tazim_W"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/abdullah-al-tazim-a3474b200/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- Section 7 end -->
 
     <!-- JS BOOTSTRAP  -->
     <script
